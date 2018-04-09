@@ -147,8 +147,14 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClInclude Include="WmaiorValorEmMatriz.h" />
+    <ClInclude Include="WmaiorValorEmVetor.h" />
     <ClInclude Include="stdafx.h" />
     <ClInclude Include="targetver.h" />
+    <ClInclude Include="WbubbleSort.h" />
+    <ClInclude Include="WmenorValorEmMatriz.h" />
+    <ClInclude Include="WmenorValorEmVetor.h" />
+    <ClInclude Include="WPrintVetor.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="M1.cpp" />

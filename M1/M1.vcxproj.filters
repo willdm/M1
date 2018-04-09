@@ -21,6 +21,24 @@
     <ClInclude Include="targetver.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="WbubbleSort.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="WmaiorValorEmVetor.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="WmenorValorEmVetor.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="WPrintVetor.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="WmaiorValorEmMatriz.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="WmenorValorEmMatriz.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="stdafx.cpp">
