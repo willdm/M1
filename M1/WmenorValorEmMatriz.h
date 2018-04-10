@@ -31,9 +31,9 @@ int menorValorEmMatriz(int matriz[TAMANHO_MATRIZ][TAMANHO_MATRIZ], int escopoBus
 				}
 				if (line == TAMANHO_MATRIZ - 1 - colun) {
 					ds[line] = matriz[line][colun];
-				}
-				if (ds[line] < mvem) {
-					mvem = ds[line];
+					if (ds[line] < mvem) {
+						mvem = ds[line];
+					}
 				}
 				break;	
 			case 3:											// consid ambas diagonais
