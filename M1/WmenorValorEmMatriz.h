@@ -9,23 +9,23 @@ int menorValorEmMatriz(int matriz[TAMANHO_MATRIZ][TAMANHO_MATRIZ], int escopoBus
 	int mvem = 0, dp[TAMANHO_MATRIZ], ds[TAMANHO_MATRIZ];
 
 	for (int line = 0; line < TAMANHO_MATRIZ; line++) {
-		for (int colun = 0; colun < TAMANHO_MATRIZ; colun++) {
+		for (int colun = 0; colun < TAMANHO_MATRIZ ; colun++) {
 			switch (escopoBusca) {
 			case 1:										// consid diagonal principal
 				matriz[line][colun] = matriz[line][colun];
 				if (line == colun) {
 					dp[line] = matriz[line][colun];
 					if (line == 0 && colun == 0) {
-						mvem = dp[line];
+						mvem = matriz[line][colun];
 					}
 					if (dp[line] < mvem) {
-						mvem = dp[line];
+						mvem = matriz[line][colun];
 					}
 				}
 				break;
 			case 2:											// consid diagonal secundaria
 				matriz[line][colun] = matriz[line][colun];
-				if (line == 0 && colun == TAMANHO_MATRIZ - 1) {
+				if (line == 0 && colun == TAMANHO_MATRIZ - 1 ) {
 					ds[line] = matriz[line][colun];
 					mvem = ds[line];
 				}
@@ -35,7 +35,7 @@ int menorValorEmMatriz(int matriz[TAMANHO_MATRIZ][TAMANHO_MATRIZ], int escopoBus
 				if (ds[line] < mvem) {
 					mvem = ds[line];
 				}
-				break;
+				break;	
 			case 3:											// consid ambas diagonais
 				matriz[line][colun] = matriz[line][colun];
 				if (line == colun) {

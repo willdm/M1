@@ -8,6 +8,7 @@ void PrintVetor(int vetor[], int tamanho) {
 	cout << endl;
 	for (int cont = 0; cont < tamanho; cont++) {
 		cout << vetor[cont] << "|";
-	}cout << endl;
+	}
+	cout << endl << endl;
 }
 

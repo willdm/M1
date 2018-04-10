@@ -3,6 +3,7 @@
 #include <iostream>
 using namespace std;
 #define TAMANHO_MATRIZ 5
+
 //Esta função deve retornar o maior elemento da matriz, levando em consideração as constantes da biblioteca
 int maiorValorEmMatriz(int matriz[TAMANHO_MATRIZ][TAMANHO_MATRIZ], int escopoBusca) {
 	int mvem = 0, dp[TAMANHO_MATRIZ], ds[TAMANHO_MATRIZ];
@@ -30,6 +31,7 @@ int maiorValorEmMatriz(int matriz[TAMANHO_MATRIZ][TAMANHO_MATRIZ], int escopoBus
 				}
 				if (line == TAMANHO_MATRIZ - 1 - colun) {
 					ds[line] = matriz[line][colun];
+					
 				}
 				if (ds[line] > mvem) {
 					mvem = ds[line];
